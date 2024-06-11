@@ -11,23 +11,23 @@ export const MenuItems = [
       cName: "nav-links",
       icon: "fa-solid fa-info-circle",
     },
-    {
-      title: "Service",
-      url: "/service",
-      cName: "nav-links",
-      icon: "fa-solid fa-tools",
-    },
+    // {
+    //   title: "Service",
+    //   url: "/service",
+    //   cName: "nav-links",
+    //   icon: "fa-solid fa-tools",
+    // },
     {
       title: "Contact",
       url: "/contact",
       cName: "nav-links",
       icon: "fa-solid fa-envelope",
     },
-    {
-      title: "Signup",
-      url: "/signup",
-      cName: "nav-links-mobile",
-      icon: "fa-solid fa-user-plus",
-    },
+    // {
+    //   title: "Signup",
+    //   url: "/signup",
+    //   cName: "nav-links-mobile",
+    //   icon: "fa-solid fa-user-plus",
+    // },
   ];
   

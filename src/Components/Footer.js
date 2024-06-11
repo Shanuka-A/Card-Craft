@@ -47,42 +47,37 @@ const Footer = () => {
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>About Us</p>
                         </a>
                         <a href="/press" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
-                            <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Email : slodyssey23@gmailcom</p>
+                            <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Email : xploreinfo.contact@gmail.com</p>
                         </a>
-                        <a href="/career" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
+                        {/* <a href="/career" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Portfolio</p>
-                        </a>
+                        </a> */}
                         <a href="/conatact" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>
-                                Contact : 
-                                071 0623285   034 2250186
-                                 </p>
+                                Contact :
+                                075 9702992  075 0561541
+                            </p>
                         </a>
                     </div>
                     <div className="sb__footer-links_div" style={{ width: '150px', margin: '1rem', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', color: 'white' }}>
                         <h4 style={{ fontSize: '16px', lineHeight: '17px', marginBottom: '0.9rem', color: 'white' }}>Stay With Us</h4>
                         <div className="socialmedia" style={{ display: 'flex', flexDirection: 'row' }}>
-                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-facebook"></i></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/ZAetxTqMtLjvh9Wq/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-facebook"></i></a>
+                            <a href="https://x.com/Xplore_Info" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-twitter"></i></a>
                             <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-linkedin"></i></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/xplore_info/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0.5rem' }}><i className="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <hr style={{ color: 'white !important', width: '100%' }} />
-                <div className="sb__footer-below" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '0.2rem' }}>
-                    <div className="sb__footer-copyright" style={{ fontSize: '13px', lineHeight: '15px', color: 'rgb(255, 255, 255)', fontWeight: '600' }}>
+                <div className="sb__footer-below" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0.2rem' }}>
+                    <div className="sb__footer-copyright" style={{ fontSize: '13px', lineHeight: '15px', color: 'rgb(255, 255, 255)', fontWeight: '200' }}>
                         <p>
-                            @{new Date().getFullYear()} Shanu. All right reserved.
+                            @{new Date().getFullYear()} Xplore Info Pvt Ltd. All right reserved.
                         </p>
                     </div>
-                    <div className="sb__footer-below-links" style={{ display: 'flex', flexDirection: 'row' }}>
-                        <a href="/terms" style={{ textDecoration: 'none' }}><div style={{ fontSize: '13px', lineHeight: '15px', marginLeft: '2rem', color: 'white', fontWeight: '600' }}><p>Terms & Conditions</p></div></a>
-                        <a href="/privacy" style={{ textDecoration: 'none' }}><div style={{ fontSize: '13px', lineHeight: '15px', marginLeft: '2rem', color: 'white', fontWeight: '600' }}><p>Privacy</p></div></a>
-                        <a href="/security" style={{ textDecoration: 'none' }}><div style={{ fontSize: '13px', lineHeight: '15px', marginLeft: '2rem', color: 'white', fontWeight: '600' }}><p>Security</p></div></a>
-                        <a href="/cookie" style={{ textDecoration: 'none' }}><div style={{ fontSize: '13px', lineHeight: '15px', marginLeft: '2rem', color: 'white', fontWeight: '600' }}><p>Cookie Declaraction</p></div></a>
-                    </div>
                 </div>
+
             </div>
         </div>
     );

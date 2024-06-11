@@ -7,6 +7,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone:'',
     subject: '',
     message: '',
   });
@@ -23,9 +24,9 @@ export default function ContactForm() {
     e.preventDefault();
 
     // Email.js logic
-    const serviceId = 'service_ee3bzj9';
-    const templateId = 'template_4flq1ou';
-    const userId = 'hcYiQch9B79qRqokn';
+    const serviceId = 'service_pl9duzd';
+    const templateId = 'template_9r3k4ii';
+    const userId = 'oMInH_7NB2x4B5k6N';
 
     try {
       const response = await emailjs.send(serviceId, templateId, formData, userId);
@@ -34,6 +35,7 @@ export default function ContactForm() {
       setFormData({
         name: '',
         email: '',
+        phone:'',
         subject: '',
         message: '',
       });
@@ -55,20 +57,20 @@ export default function ContactForm() {
     <div className="form-container">
       <div className="contact-info">
         <p style={textStyle}>
-          <i className="fas fa-phone" style={iconStyle}></i> +94 (71) 0533285 / +94 (75) 0561541
+          <i className="fas fa-phone" style={iconStyle}></i> +94 (75) 9702992 / +94 (75) 0561541
         </p>
         <p style={textStyle}>
-          <i className="fas fa-map-marker-alt" style={iconStyle}></i> Muhandiram Road, Gamage Place, Bulathsinghala, 12300
+          <i className="fas fa-map-marker-alt" style={iconStyle}></i> Malabe,Sri Lanka, 10115
         </p>
 
         <div className="social-icons">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/ZAetxTqMtLjvh9Wq/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/Xplore_Info" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="hhttps://www.instagram.com/xplore_info/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
         </div>
@@ -78,15 +80,22 @@ export default function ContactForm() {
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
         />
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Your Email"
           value={formData.email}
+          onChange={handleChange}
+        />
+         <input
+          type="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+          value={formData.phone}
           onChange={handleChange}
         />
         <input
