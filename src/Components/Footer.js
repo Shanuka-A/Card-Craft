@@ -17,7 +17,7 @@ const Footer = () => {
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Individuals</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links-div" style={{ width: '150px', margin: '1rem', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', color: 'white' }}>
+                    {/* <div className="sb__footer-links-div" style={{ width: '150px', margin: '1rem', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', color: 'white' }}>
                         <h4 style={{ fontSize: '16px', lineHeight: '17px', marginBottom: '0.9rem', color: 'white' }}>Resources</h4>
                         <a href="/resource" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Resource Center</p>
@@ -28,7 +28,7 @@ const Footer = () => {
                         <a href="/individuals" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>
                             <p style={{ fontSize: '12px', lineHeight: '15px', margin: '0.5rem', cursor: 'pointer' }}>Individuals</p>
                         </a>
-                    </div>
+                    </div> */}
                     <div className="sb__footer-links_div" style={{ width: '150px', margin: '1rem', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', color: 'white' }}>
                         <h4 style={{ fontSize: '16px', lineHeight: '17px', marginBottom: '0.9rem', color: 'white' }}>Partners</h4>
                         <a href="/employer" style={{ color: 'rgb(175, 175, 179)', textDecoration: 'none' }}>

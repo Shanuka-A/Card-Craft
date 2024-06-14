@@ -4,7 +4,7 @@ import "../Components/CSS/AboutUsStyle.css"
 export default function AboutUs() {
   return (
     <div className='about-container'>
-        <h1>Our History</h1>
+        <h1>Free Updatable Profile</h1>
         <p>Embark on a journey through time with Sri Lankan Odyssey, where our history is woven into the fabric of exploration and discovery. 
             Established with a passion for showcasing the rich cultural heritage and natural wonders of Sri Lanka, our story is a testament to the enduring spirit of adventure. 
             From humble beginnings, we have evolved into a trusted guide, curating experiences that delve into the heart of Sri Lanka's past and present.
