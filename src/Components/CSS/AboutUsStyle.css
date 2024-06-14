@@ -1,18 +1,87 @@
-.about-container{
+.about-container {
     margin: 4rem 6rem;
     text-align: start;
 }
 
-.about-container h1{
+.about-container h1 {
     padding-bottom: 1rem;
 }
 
-.about-container p{
+.about-container p {
     padding-bottom: 2rem;
 }
 
-@media screen and (max-width:850px){
-    .about-container{
+@media screen and (max-width: 850px) {
+    .about-container {
         margin: 4rem 2rem;
+    }
+}
+
+.about-container {
+    display: flow-root;
+    padding: 20px;
+}
+
+.tile {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-bottom: 20px; /* Adds gap between tiles */
+}
+
+.tile-image {
+    max-width: 300px; /* Adjusted for better layout */
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.tile-content {
+    flex: 1;
+}
+
+.tile h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.tile p, .tile ul {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tile ul {
+    padding-left: 20px;
+}
+
+.tile li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .tile {
+        flex-direction: column; /* Stack image and content vertically */
+        text-align: center; /* Center align text for mobile view */
+    }
+
+    .tile-image {
+        margin: 0 auto 20px; /* Center image and add margin at the bottom */
+        max-width: 100%; /* Ensure the image does not overflow */
+    }
+
+    .tile-content {
+        text-align: left; /* Re-align text to left within the content area */
+    }
+
+    .tile h1 {
+        font-size: 1.25em;
+    }
+
+    .tile p, .tile ul {
+        font-size: 1em;
     }
 }
