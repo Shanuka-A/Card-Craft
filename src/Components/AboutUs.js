@@ -1,14 +1,14 @@
-import React from 'react'
-import "../Components/CSS/AboutUsStyle.css"
-import offer from '../Assets/3286556.jpg'
-import work from '../Assets/3857425.jpg'
-import why from '../Assets/6134172.jpg'
-import fit from '../Assets/3871751.jpg'
+import React from 'react';
+import "../Components/CSS/AboutUsStyle.css";
+import offer from '../Assets/3286556.jpg';
+import work from '../Assets/3857425.jpg';
+import why from '../Assets/6134172.jpg';
+import fit from '../Assets/3871751.jpg';
 
 export default function AboutUs() {
   return (
     <div className='about-container'>
-      <div className='tile'>
+      <div className='tile left'>
         <img src={offer} alt="What We Offer" className='tile-image' />
         <div className='tile-content'>
           <h1>What We Offer....</h1>
@@ -19,7 +19,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className='tile'>
+      <div className='tile right'>
         <img src={work} alt="How It Works" className='tile-image' />
         <div className='tile-content'>
           <h1>How It Works</h1>
@@ -30,7 +30,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className='tile'>
+      <div className='tile left'>
         <img src={why} alt="Why Choose Us" className='tile-image' />
         <div className='tile-content'>
           <h1>Why Choose Our NFC Business Cards?</h1>
@@ -43,7 +43,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className='tile'>
+      <div className='tile right'>
         <img src={fit} alt="Perfect For" className='tile-image' />
         <div className='tile-content'>
           <h1>Perfect For</h1>
@@ -56,5 +56,5 @@ export default function AboutUs() {
         </div>
       </div>
     </div>
-  )
+  );
 }

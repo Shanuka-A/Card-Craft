@@ -1,6 +1,10 @@
 .about-container {
     margin: 4rem 6rem;
     text-align: start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-container h1 {
@@ -17,11 +21,6 @@
     }
 }
 
-.about-container {
-    display: flow-root;
-    padding: 20px;
-}
-
 .tile {
     display: flex;
     background-color: #f9f9f9;
@@ -31,12 +30,34 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
     margin-bottom: 20px; /* Adds gap between tiles */
+    width: 100%; /* Use full width of container */
+    max-width: 1000px; /* Max width */
+    height: 300px; /* Fixed height */
+}
+
+.tile.left {
+    justify-content: flex-start;
+}
+
+.tile.right {
+    justify-content: flex-end;
+    flex-direction: row-reverse; /* Reverse the order of image and content */
 }
 
 .tile-image {
     max-width: 300px; /* Adjusted for better layout */
     border-radius: 8px;
     margin-right: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.tile.right .tile-image {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.tile:hover .tile-image {
+    transform: scale(1.1); /* Scale up the image on hover */
 }
 
 .tile-content {
@@ -68,9 +89,17 @@
         text-align: center; /* Center align text for mobile view */
     }
 
+    .tile.right {
+        flex-direction: column; /* Ensure right-aligned tiles stack correctly */
+    }
+
     .tile-image {
         margin: 0 auto 20px; /* Center image and add margin at the bottom */
         max-width: 100%; /* Ensure the image does not overflow */
+    }
+
+    .tile.right .tile-image {
+        margin-left: 0;
     }
 
     .tile-content {
