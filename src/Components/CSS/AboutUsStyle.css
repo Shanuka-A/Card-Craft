@@ -1,116 +1,88 @@
 .about-container {
-    margin: 4rem 6rem;
+    margin: 4rem 6rem; /* Adjust margins as needed */
     text-align: start;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* Gap between content sections */
 }
 
-.about-container h1 {
-    padding-bottom: 1rem;
-}
-
-.about-container p {
-    padding-bottom: 2rem;
-}
-
-@media screen and (max-width: 850px) {
-    .about-container {
-        margin: 4rem 2rem;
-    }
-}
-
-.tile {
+.content {
     display: flex;
-    background-color: #f9f9f9;
+    align-items: center;
+    max-width: 800px; /* Adjusted max-width */
+    width: 100%;
     border: 2px solid #ddd;
     border-radius: 8px;
+    background-color: #f9f9f9;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    margin-bottom: 20px; /* Adds gap between tiles */
-    width: 100%; /* Use full width of container */
-    max-width: 1000px; /* Max width */
-    height: 300px; /* Fixed height */
+    margin-bottom: 20px; /* Adds gap between content sections */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.tile.left {
-    justify-content: flex-start;
+.content:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
 }
 
-.tile.right {
-    justify-content: flex-end;
-    flex-direction: row-reverse; /* Reverse the order of image and content */
-}
-
-.tile-image {
-    max-width: 300px; /* Adjusted for better layout */
+.content-image {
+    max-width: 300px; /* Adjusted max-width for images */
     border-radius: 8px;
     margin-right: 20px;
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.tile.right .tile-image {
-    margin-right: 0;
-    margin-left: 20px;
+.content:hover .content-image {
+    transform: scale(1.1); /* Scale up slightly on hover */
 }
 
-.tile:hover .tile-image {
-    transform: scale(1.1); /* Scale up the image on hover */
-}
-
-.tile-content {
+.content-text {
     flex: 1;
 }
 
-.tile h1 {
+.content h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-.tile p, .tile ul {
+.content p, .content ul {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.tile ul {
+.content ul {
     padding-left: 20px;
 }
 
-.tile li {
+.content li {
     list-style-type: disc;
     margin-left: 20px;
 }
 
 @media screen and (max-width: 600px) {
-    .tile {
-        flex-direction: column; /* Stack image and content vertically */
-        text-align: center; /* Center align text for mobile view */
+    .about-container {
+        margin: 4rem 2rem; /* Adjusted margin for smaller screens */
     }
 
-    .tile.right {
-        flex-direction: column; /* Ensure right-aligned tiles stack correctly */
+    .content {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        text-align: center; /* Center align text and image */
     }
 
-    .tile-image {
-        margin: 0 auto 20px; /* Center image and add margin at the bottom */
-        max-width: 100%; /* Ensure the image does not overflow */
+    .content-image {
+        margin: 0 auto 20px; /* Center image and add bottom margin */
+        max-width: 100%; /* Ensure image does not overflow */
     }
 
-    .tile.right .tile-image {
-        margin-left: 0;
+    .content:hover .content-image {
+        transform: scale(1.1); /* Scale up slightly on hover for smaller screens */
     }
 
-    .tile-content {
-        text-align: left; /* Re-align text to left within the content area */
+    .content h1 {
+        font-size: 1.5em; /* Adjusted heading font size */
     }
 
-    .tile h1 {
-        font-size: 1.25em;
-    }
-
-    .tile p, .tile ul {
-        font-size: 1em;
+    .content p, .content ul {
+        font-size: 1em; /* Adjusted text font size */
     }
 }

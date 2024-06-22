@@ -11,12 +11,12 @@ export const MenuItems = [
       cName: "nav-links",
       icon: "fa-solid fa-info-circle",
     },
-    // {
-    //   title: "Service",
-    //   url: "/service",
-    //   cName: "nav-links",
-    //   icon: "fa-solid fa-tools",
-    // },
+    {
+      title: "Privacy Policy",
+      url: "/service",
+      cName: "nav-links",
+      icon: "fa-solid fa-tools",
+    },
     {
       title: "Contact",
       url: "/contact",
