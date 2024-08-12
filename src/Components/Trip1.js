@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Components/CSS/TripStyle1.css";
 import Tripdata from "./Tripdata1";
-import consentImage from '../Assets/XI_logo2.jpg'; // Adjust the path as per your file structure
+import consentImage from '../Assets/XI_logo2.png'; // Adjust the path as per your file structure
 
 export default function Trip1() {
   return (
@@ -15,7 +15,7 @@ export default function Trip1() {
           </p>
           <p>
             If you have any questions or require further details about our Privacy Policy, please feel free to contact us.
-            This Privacy Policy applies solely to our online activities and is valid for visitors to our website in regard to the information they share and/or collect on Xplore Info.
+            This Privacy Policy applies solely to our online activities and is valid for visitors to our website in regard to the information they share and or collect on Xplore Info.
             This policy does not apply to information collected offline or through other channels.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Trip1() {
             <h2>Information We Collect</h2>
             <ul>
               <li>The types of personal information you are asked to provide, and the reasons for asking for it, will be made clear at the point of collection.</li>
-              <li>If you contact us directly, we may receive additional details about you such as your name, email address, phone number, the contents of your message and/or attachments you send us, and any other information you choose to provide.</li>
+              <li>If you contact us directly, we may receive additional details about you such as your name, email address, phone number, the contents of your message and or attachments you send us, and any other information you choose to provide.</li>
               <li>When you register for an account, we may request contact information including your name, company name, address, email address, and phone number.</li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ export default function Trip1() {
               <li>Browser type</li>
               <li>Internet Service Provider (ISP)</li>
               <li>Date and time stamp</li>
-              <li>Referring/exit pages</li>
+              <li>Referring exit pages</li>
               <li>Number of clicks</li>
             </ul>
             <p>This information is not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.</p>
@@ -79,7 +79,7 @@ export default function Trip1() {
         <div className='tile1'>
           <div className='tile1-content'>
             <h2>Advertising Partners Privacy Policies</h2>
-            <p>Third-party ad servers or ad networks use technologies such as cookies, JavaScript, or web beacons in their advertisements and links that appear on Xplore Info. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content you see on websites you visit.</p>
+            <p>Third-party ad servers or ad networks use technologies such as cookies, JavaScript, or web beacons in their advertisements and links that appear on Xplore Info. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and or to personalize the advertising content you see on websites you visit.</p>
             <p>Please note that Xplore Info has no access to or control over these cookies used by third-party advertisers.</p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Trip1() {
         <div className='tile1'>
           <div className='tile1-content'>
             <h2>Children's Information</h2>
-            <p>Protecting children while using the internet is another part of our priority. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+            <p>Protecting children while using the internet is another part of our priority. We encourage parents and guardians to observe, participate in, and or monitor and guide their online activity.</p>
             <p>Xplore Info does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best efforts to promptly remove such information from our records.</p>
           </div>
         </div>

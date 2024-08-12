@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone:'',
+    phone: '',
     subject: '',
     message: '',
   });
@@ -35,7 +35,7 @@ export default function ContactForm() {
       setFormData({
         name: '',
         email: '',
-        phone:'',
+        phone: '',
         subject: '',
         message: '',
       });
@@ -91,7 +91,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
         />
-         <input
+        <input
           type="phone"
           name="phone"
           placeholder="Your Phone Number"
@@ -112,7 +112,14 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
         />
-        <button type="submit">Send Message</button>
+        <button>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text">Send a message....</span>
+        </button>
       </form>
     </div>
   );
