@@ -1,46 +1,66 @@
-.trip{
-    margin: 4rem 6rem;
-    color: #2a2a2a;
-}
-
-.trip h1{
-    font-size: 3rem;
-}
-
-.tripcard{
-    margin-top: 3rem;
+.trip {
     display: flex;
-    justify-content: space-between;
-}
-
-.t-card{
-    width: 32%;
-    text-align: start;
-    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
-    border-radius: 7px;
-    cursor: pointer;
-    padding: 1rem .8rem;
-}
-
-.t-image{
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .cssbuttons-io-button {
+    background: #5f00ed;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #4d51a6;
     overflow: hidden;
-    border-radius: 7px;
-}
-
-.t-image img{
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease-in-out;
-    border-radius: 7px;
-}
-
-.t-image:hover img{
-    transform: scale(1.3);
-
-}
-
-.t-card h4{
-    font-size: 1.3rem;
-    padding: .9rem 0 .2rem 0;
-}
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #526db9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #5257b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+  /* Remove underline from link */
+  .link-button {
+    text-decoration: none;
+  }
+  

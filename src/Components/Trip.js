@@ -1,34 +1,28 @@
 import "../Components/CSS/TripStyle.css";
 import React from 'react';
-import Tripdata from "./Tripdata";
-import Trip1 from "../Assets/lotus.jpg"
-import Trip2 from "../Assets/meemure.jpg"
-import Trip3 from "../Assets/riverston.jpg"
 
 export default function Trip() {
     return (
         <div className="trip">
-            <h1>Feedbacks</h1>
-            {/* <p>You have the opportunity to explore every corner of Sri Lanka.</p> */}
-            <div className="tripcard">
-                <Tripdata
-                    // image={Trip1}
-                    heading="Trip to Lotus Tower"
-                    text="dummy"
-                />
-
-                <Tripdata
-                    // image={Trip2}
-                    heading="Trip to Meemure "
-                    text="dummy."
-                />
-
-                <Tripdata
-                    // image={Trip3}
-                    heading="Trip to Riverston"
-                    text="dummy."
-                />
-            </div>
+            <a href="https://master--glistening-cactus-f7ae79.netlify.app/" className="link-button">
+                <button className="cssbuttons-io-button">
+                    See Demo Profile
+                    <div className="icon">
+                        <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </div>
+                </button>
+            </a>
         </div>
     )
 }
