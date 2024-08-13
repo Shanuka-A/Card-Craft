@@ -74,6 +74,7 @@ export default function ContactForm() {
             <i className="fab fa-instagram"></i>
           </a>
         </div>
+        
       </div>
       <h1>Send a Message to us!</h1>
       <form onSubmit={handleSubmit}>

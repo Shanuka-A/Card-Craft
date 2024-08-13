@@ -80,6 +80,14 @@ button:hover {
     display: none;
 }
 
+.nav-links.active {
+    background-color: #01439a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+
 @media screen and (max-width: 850px) {
     .NavbarItems {
         z-index: 99;
