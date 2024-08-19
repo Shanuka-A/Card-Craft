@@ -7,6 +7,11 @@
     gap: 20px; /* Gap between content sections */
 }
 
+.about-container h1 {
+    color: #090490; /* Replace with your desired color */
+    font-weight: bold; /* Make text bold */
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -59,23 +64,92 @@
     margin-left: 20px;
 }
 
+.swipeable-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative; /* Added to ensure buttons are properly positioned */
+}
+
+.frame-image {
+    width: 80%; /* Adjust to fit your design */
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-prev, .carousel-next {
+    background-color: #5f00ed;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Positioning for absolute placement */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.carousel-next {
+    right: 10px; /* Adjust as needed */
+}
+
+.carousel-prev svg, .carousel-next svg {
+    fill: #fff; /* Icon color */
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #4d51a6;
+}
+
+.carousel-prev:active, .carousel-next:active {
+    transform: scale(0.95);
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 600px) {
+    .swipeable-images {
+        flex-direction: column; /* Stack buttons vertically */
+        position: relative; /* Ensures buttons are correctly positioned in mobile view */
+    }
+
+    .carousel-prev, .carousel-next {
+        margin: 10px 0; /* Adjust margin for vertical buttons */
+        padding: 8px;
+        position: static; /* Adjust positioning for mobile */
+    }
+}
+
+
+/* Mobile view adjustments */
 @media screen and (max-width: 600px) {
     .about-container {
-        margin: 4rem 2rem; /* Adjusted margin for smaller screens */
+        margin: 2rem 1rem; /* Adjusted margin for smaller screens */
     }
 
     .content {
         flex-direction: column; /* Stack image and text vertically on small screens */
         text-align: center; /* Center align text and image */
+        padding: 10px; /* Reduced padding for smaller screens */
     }
 
     .content-image {
-        margin: 0 auto 20px; /* Center image and add bottom margin */
+        margin: 0 auto 10px; /* Center image and add bottom margin */
         max-width: 100%; /* Ensure image does not overflow */
     }
 
-    .content:hover .content-image {
-        transform: scale(1.1); /* Scale up slightly on hover for smaller screens */
+    .content-text {
+        text-align: center; /* Center align text on small screens */
     }
 
     .content h1 {
@@ -84,5 +158,14 @@
 
     .content p, .content ul {
         font-size: 1em; /* Adjusted text font size */
+    }
+    
+    .swipeable-images {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .carousel-prev, .carousel-next {
+        margin: 10px 0; /* Adjust margin for vertical buttons */
+        padding: 8px;
     }
 }

@@ -81,7 +81,7 @@ button:hover {
 }
 
 .nav-links.active {
-    background-color: #01439a;
+    background-color: #15174d;
     color: #fff;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
