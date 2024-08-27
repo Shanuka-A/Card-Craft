@@ -23,6 +23,12 @@ export const MenuItems = [
       cName: "nav-links",
       icon: "fa-solid fa-envelope",
     },
+    {
+      title: "QR",
+      url: "/QR",
+      cName: "nav-links",
+      icon: "fa-solid fa-envelope",
+    },
     // {
     //   title: "Signup",
     //   url: "/signup",

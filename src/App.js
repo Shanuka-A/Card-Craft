@@ -6,6 +6,7 @@ import About from './routes/About';
 import Service from './routes/Service';
 import Contact from './routes/Contact';
 import Footer from './Components/Footer';
+import QRCodeGenerator from './routes/QRCodeGenerator';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/service' element={<Service/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/QR' element={<QRCodeGenerator/>}/>
         
       </Routes>
       <Footer/>
